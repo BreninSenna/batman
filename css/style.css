@@ -1,0 +1,51 @@
+/* Configurando variáveis do ambiente*/
+:root{
+    --cor-fundo: rgb(200 100 100);
+    --cor-main: rgb(100 50 50);
+    --cor-box: rgb()
+}
+
+/*Configurar elementos*/
+* {
+    outline: 0; /*contorno*/
+    text-rendering: optimizeLegibility;
+}
+
+/* Configurar body*/
+body {
+    background: var(--cor-fundo);
+    margin: 0;
+    padding: 0;
+}
+/* Configuração do header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Configurando o titulo do header*/
+header h1 {
+    width: 90%;
+    text-align: center;
+    color: #fff;
+}
+/*Definindo a area*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 90%;
+    background: var(--cor-main);
+    margin: 20px auto;
+}
+/*Ajustando as propriedades da caixa*/
+.box {
+    display: block;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    border: 1px solid var(--cor-fundo);
+    border-radius: 30px;
+    margin: 20px;
+    background: var(--cor-box); 
+}
